@@ -1,7 +1,11 @@
 import React, {useState} from "react";
 
 function AsynchApp() {
-    let [count, setCount] = useState(0);
+    let [count, setCount] = useState(() => { //Lazy Initialization: if u want to intialize a state with a value that is computationally 
+        // expensive, then use this callbackfunction then state just initialize once
+        console.log("rendered...");
+        return 0
+    });
 
     // function increase1() {
     //     setCount(count + 1); // Asymch Process
