@@ -1,16 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import './App.css';
-import Hello from './Components/Hello';
-
-
+import AsynchApp from "./Components/AsynchState/AsynchApp.js"
 
 function App() {
-  let [name, setName] = useState('');
+
 
   return (
     <div>
-      <Hello changeName={setName} />
-      {name && <h1>Hello {name}</h1>}
+      <AsynchApp />
     </div>
   );
 }
