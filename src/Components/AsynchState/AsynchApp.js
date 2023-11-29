@@ -8,14 +8,14 @@ function AsynchApp() {
     });
 
     // function increase1() {
-    //     setCount(count + 1); // Asymch Process
+    //     setCount(count + 1); // Asynch Process
     //     setCount(count + 1);
     //     console.log(count);
     // }
 
     function increase2() {
         setCount(count => count + 1); // Asymch Process
-        setCount(count => count + 1);
+        // setCount(count => count + 1);
         console.log(count);
     }
 
